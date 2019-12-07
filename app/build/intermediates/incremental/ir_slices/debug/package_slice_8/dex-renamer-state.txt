@@ -1,0 +1,4 @@
+#Tue May 08 14:35:26 IST 2018
+base.0=G\:\\MATERIAL\\SEM 8\\PROJECT\\New folder\\SwooshCar\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\23
+path.0=classes.dex
+renamed.0=classes.dex
