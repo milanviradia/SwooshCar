@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.harmit.swooshcar.RideFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/offer_ride"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_login_ori"
+            android:text="Offer Ride"
+            android:textAllCaps="false"
+            android:textColor="@color/White" />
+
+        <Button
+            android:id="@+id/find_ride"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/offer_ride"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_login_ori"
+            android:text="Find Ride"
+            android:textAllCaps="false"
+            android:textColor="@color/White" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

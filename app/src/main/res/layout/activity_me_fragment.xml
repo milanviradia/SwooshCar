@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.harmit.swooshcar.MeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                app:civ_border_color="@color/White"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/fullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/White"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl1"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/about_you"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="0.2"
+                android:background="@drawable/btn_me"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:elevation="4dp"
+                android:gravity="center_vertical"
+                android:paddingStart="40dp"
+                android:text="    About You" />
+
+            <Button
+                android:id="@+id/car"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="0.2"
+                android:background="@drawable/btn_me"
+                android:drawableLeft="@drawable/ic_directions_car_black_24dp"
+                android:elevation="4dp"
+                android:gravity="center_vertical"
+                android:paddingStart="40dp"
+                android:text="     Car" />
+
+            <Button
+                android:id="@+id/verification"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="0.2"
+                android:background="@drawable/btn_me"
+                android:drawableLeft="@drawable/ic_verified_user_black_24dp"
+                android:elevation="4dp"
+                android:gravity="center_vertical"
+                android:paddingStart="40dp"
+                android:text="     Verification" />
+
+            <Button
+                android:id="@+id/change_password"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="0.2"
+                android:background="@drawable/btn_me"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:elevation="4dp"
+                android:gravity="center_vertical"
+                android:paddingStart="40dp"
+                android:text="    Change Password" />
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="0.2"
+                android:background="@drawable/btn_me"
+                android:drawableLeft="@drawable/logout"
+                android:elevation="4dp"
+                android:gravity="center_vertical"
+                android:paddingStart="40dp"
+                android:text="     Logout"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

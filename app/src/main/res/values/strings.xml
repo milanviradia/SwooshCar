@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Swoosh Car</string>
+    <string name="forgot_pwd_link1">Forget your login detail?</string>
+    <string name="forgot_pwd_link2"> Get help signing in.</string>
+    <string name="signup_linlk1">Don’t have an account?</string>
+    <string name="signup_link2">Sign up.</string>
+    <string name="signin_link1">Already have account?</string>
+    <string name="signin_link2">Log in.</string>
+    <string name="forget_pwd1">Enter your Swoosh car username or the email address associated with your account.</string>
+    <string name="move_to_login">Move To</string>
+    <string name="title_activity_main">SwooshCar</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="number_plate">Number Plate</string>
+    <string name="manufacturer">Manufacturer</string>
+    <string name="model">Model</string>
+    <string name="colour">Colour</string>
+
+    <string name="spinner_title">seat</string>
+
+</resources>

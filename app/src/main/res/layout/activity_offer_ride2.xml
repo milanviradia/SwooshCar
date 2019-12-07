@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.harmit.swooshcar.OfferRide2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp">
+
+
+        <Button
+            android:id="@+id/datePicker"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="50"
+            android:background="@drawable/rounded_corner"
+            android:onClick="setDate"
+            android:text="Select Date"
+            android:textColor="@color/White" />
+
+        <Button
+            android:id="@+id/timepicker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="50"
+            android:background="@drawable/rounded_corner"
+            android:onClick="setTime"
+            android:text="Select Time"
+            android:textColor="@color/White" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/tv"
+            android:paddingLeft="20dp"
+            android:text="Price:"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:paddingRight="25dp">
+
+            <Button
+                android:id="@+id/minus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:background="@drawable/rounded_corner"
+                android:onClick="decrement"
+                android:text="-"
+                android:textSize="20dp"
+                android:textColor="@color/White" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/pluse"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:background="@drawable/rounded_corner"
+                android:onClick="increment"
+                android:text="+"
+                android:textSize="20dp"
+                android:textColor="@color/White" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/tv"
+            android:paddingLeft="20dp"
+            android:text="Available Seats:"
+            android:textSize="20dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Spinner
+                android:id="@+id/seats"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="25dp"
+                android:prompt="@string/spinner_title" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/tv"
+            android:paddingLeft="20dp"
+            android:text="Luggage Size:"
+            android:textSize="20dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Spinner
+                android:id="@+id/luggage"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="25dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/tv"
+            android:paddingLeft="20dp"
+            android:text="Ride Comments:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edcmnts"
+            android:background="@drawable/box"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="320dp"
+            android:layout_marginBottom="20dp"
+            android:lines="4"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/offerride1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_login_ori"
+        android:text="OFFER RIDE"
+        android:textAllCaps="false"
+        android:textColor="@color/White" />
+
+</LinearLayout>

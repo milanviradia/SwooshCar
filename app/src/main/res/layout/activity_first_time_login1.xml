@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.example.harmit.swooshcar.FirstTimeLogin1Activity">
+
+    <TextView
+        android:layout_width="420dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="Enter Following Details."
+        android:textAllCaps="false"
+        android:textColor="@color/White"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/first_name"
+        android:layout_width="340dp"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/box"
+        android:hint="First Name"
+        android:inputType="textWebEditText"
+        android:lines="1"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/last_name"
+        android:layout_width="340dp"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/box"
+        android:hint="Last name"
+        android:inputType="textWebEditText"
+        android:lines="1"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+
+    <RadioGroup
+        android:id="@+id/gender"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/Male"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="18dp" />
+
+        <RadioButton
+            android:id="@+id/Female"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textSize="18dp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+91"
+
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone No."
+            android:inputType="number"
+            android:lines="1"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="center">
+
+        <Button
+
+            android:id="@+id/submit_value"
+            android:layout_width="340dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="bottom"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_login_ori"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/White" />
+
+    </LinearLayout>
+
+</LinearLayout>

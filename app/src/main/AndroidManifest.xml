@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.harmit.swooshcar">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/swooshcar_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/swooshcar_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".ForgetPwdActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".Experement" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" />
+        <activity android:name=".OfferRide1" />
+        <activity android:name=".FindRide1" />
+        <activity android:name=".FirstTimeLogin1Activity" />
+        <activity android:name=".FirstTimeLogin2Activity" />
+        <activity
+            android:name=".AboutYouActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CarActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Verification"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".OfferRide2Activity" />
+        <activity android:name=".FindRide2Activity" />
+        <activity android:name=".RideDetail" />
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".CarRegistrationActivity" />
+        <activity android:name=".BookedRideDetail"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.harmit.swooshcar.BookedRideDetail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/brdfrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corner"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="FROM"
+            android:textColor="@color/White"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/brdpickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/brdfrom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:text="Pickup Point"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/brdpickup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/brdpickup"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-5dp"
+            android:padding="5dp"
+            android:text="Pickup Point"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/brdto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/brdpickup1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_corner"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="TO"
+            android:textColor="@color/White"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/brddestination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/brdto"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:text="Destination Point"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/brddestination1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/brddestination"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-5dp"
+            android:padding="5dp"
+            android:text="Destination Point"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+
+        <TextView
+            android:id="@+id/brdjourneydate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/brddestination1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_corner"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="JOURNEY DATE"
+            android:textColor="@color/White"
+            android:textSize="18dp" />
+
+
+        <LinearLayout
+            android:id="@+id/brdlldatetime"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/brdjourneydate"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/brdlldate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/brddate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/brdjourneydate"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Date"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/brddate1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/brddate"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Date"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/brdlltime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/brdtime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Time"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/brdtime1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Time"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/brddrivebrdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/brdlldatetime"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_corner"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="DRIVER DETAILS"
+            android:textColor="@color/White"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/brddriver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/brddrivebrdetail"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:text="Driver Name"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/brddriver1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/brddriver"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-5dp"
+            android:padding="5dp"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+
+        <TextView
+            android:id="@+id/brdpayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/brddriver1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_corner"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="PAYMENT DETAILS"
+            android:textColor="@color/White"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:id="@+id/brdllpayment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/brdpayment"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/brdpayment1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/brdprice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Total Price"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp" />
+
+
+                <TextView
+                    android:id="@+id/brdprice1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Price"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/brdback"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/brdllpayment"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:text="Back To Home"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</ScrollView>
